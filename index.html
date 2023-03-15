@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>pychic reading project</title>
+        <link rel="stylesheet" href="/css/all.min.css"/>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Dancing+Script&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+       
+         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Dancing+Script&family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+
+       <style>
+          :root{
+    --purple-color:#871687;
+    --lightpurple-color:#993086;
+    --orang-color:#FF3150;
+    --yellow-color:#d2ba43;
+    --section-color:#EFF7FA;
+    --gold-color:#f7b900;
+}
+body{
+   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   overflow-x: hidden;
+       font-family: "Raleway", sans-serif !important;  
+}
+.overlay{
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+     left: 0;
+    top: 0;
+     z-index: 1;
+    height: 100%;
+    width: 100%;
+    
+}
+.overlay-section{
+    background-color: white;
+    opacity: .3;
+    position: absolute;
+     left: 0;
+    top: 0;
+     z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.main-btn{
+    background-color: var(--lightpurple-color);
+    color:white;
+    padding:10px 50px;
+   transition: .3s;
+   
+}
+
+.main-btn:hover{
+    background-image: url(/images/purple-background.jpg);
+    color:white;
+}
+.header-sec{
+    background-color: var(--lightpurple-color);
+    color:white;
+    padding:15px 0;
+    font-size: 18px;
+    color:#ddd;
+}
+.header-sec a{
+    color:white;
+    text-decoration: none;
+    
+}
+/* start navbar*/
+
+.navbar .navbar-nav .nav-link{
+    color:white;
+    font-size: 16px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.navbar .container-fluid{
+    position: relative;
+    z-index: 2;
+}
+.navbar-brand{
+   color: #ddd;
+    line-height: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+    line-height: 25px;
+}
+.navbar .navbar-nav .nav-linka.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar-brand:hover,
+.navbar .navbar-nav .nav-link:focus{
+    color:var(--gold-color);
+    
+}
+
+.navbar .navbar-toggler{
+    color:white;
+    font-size: 25px;
+    border:1px solid white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* end navbar*/
+
+/*start landing*/
+.layout-sec{
+    background-image: url(/images/Psychic6_700x500.png);
+    background-size: cover;
+    height: 100vh;
+    
+
+}
+.landing .container .landing-info{
+   
+   text-align: center;
+   float: right;
+   margin-top:100px;
+
+}
+.landing .landing-info h1{
+    font-size: 4em;
+    color:white;
+    font-family: 'Cinzel Decorative', cursive;
+}
+/*end landing*/ 
+
+
+
+/*start about me*/
+.about-me{
+    background-image: url(/images/bg-About.jpeg);
+    background-size: cover;
+    position: relative;
+    
+    padding:20px 0;
+    margin-top:100px;
+    margin-bottom: 100px;
+  
+}
+.about-me p{
+    line-height: 1.6;
+    font-size: 22px;
+    opacity: 1;
+}
+.about-me h1{
+    color:#fff;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.about-me .aboutme-info{
+    width:70%;
+    margin:20px auto;
+    position: relative;
+    z-index: 2;
+    color:#fff;
+
+}
+
+/*end about me*/
+
+
+
+/*strat reviews*/
+.reviews{
+    background-color: #e6e6e6;
+    padding:20px;
+}
+.reviews .container h2{
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--lightpurple-color);
+    font-size: 37px;
+}
+.reviews p{
+    line-height: 1.7;
+   font-weight: 500;
+    font-size: 20px;
+}
+.reviews .review{
+    background-color: white;
+    padding:15px;
+    margin-right: 30px;
+    box-shadow: 10px 10px 10px #888;
+}
+
+/*end reviews*/
+/* start stuff section*/
+.stuff .container h4{
+    color:white;
+    font-weight: bold;
+   
+}
+.stuff{
+    margin-bottom: 50px;
+    margin-top:50px;
+    background-image: url(/images/bg_02_h.png);
+    background-size: cover;
+    padding:50px ;
+    position: relative;
+   
+}
+.stuff .container{
+    position: relative;
+    z-index: 2;
+}
+.stuff .container p{
+    line-height: 1.6;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.stuff h1{
+    text-align: center;
+    color:white;
+}
+.stuff h2{
+    color:white;
+    padding-left:20px;
+}
+.stuff-info{
+    opacity: 1;
+    position: relative;
+    color:white;
+    width:50%;
+}
+@media screen and (max-width:929px) {
+    .stuff-info{
+        width:100%;
+    }
+    .stuff-info p{
+        font-size: 16px;
+    }
+}
+.stuff-info img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.reviews p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+.btn-footer{
+    margin-left: 25%;
+}
+/*end stuff section*/
+/*start map*/
+.map-sec{
+    margin-bottom: 50px;
+}
+/*end map*/
+
+/*start gallary section*/
+.gallary{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.gallary h2{
+    color:var(--gold-color);
+    font-family: 'Cinzel Decorative', cursive;
+}
+.gallary .container img{
+    width: 100%;
+    height: 100%;
+}
+/*end gallary section*/
+
+/*strart footer*/
+
+.footer{
+    background-color: black;
+    padding:50px 0;
+}
+.footer .container{
+    
+    border-bottom: 1px solid var(--gold-color);
+}
+.footer .container a{
+    text-decoration: none;
+    color:#ddd;
+}
+.footer .container .fa-envelope{
+    color:#888;
+}
+.footer .container .fa-hand-holding-heart,
+.footer .container p
+{
+    color:#888;
+}
+.footer .btn-footer{
+    background-color: var(--yellow-color);
+    color: #fff;
+    padding:10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border:1px solid white;
+    transition: .5s;
+}
+.btn-footer:hover{
+    background-color: black;
+}
+.footer .fa-location-pin{
+    color:#fff;
+    margin-right: 10px;
+}
+.footer .copyright{
+    color:#B8B8BE;
+    text-align: center;
+    padding-top: 30px;
+}
+.footer .ul-footer{
+    text-align: center;
+    padding:20px 0;
+}
+.footer .ul-footer ul li{
+   display: inline-block;
+   color:#fff;
+   margin-right: 20px;
+}
+@media screen and (max-width:929px) {
+    .footer-info{
+        display: block;
+    }
+    .footer-info > .col{
+        margin-bottom: 10px;
+    }
+}
+/*
+.footer{
+    background-color: black;
+}
+.footer span{
+    color:var(--gold-color);
+}
+.fa-facebook,
+.fa-linkedin
+{
+   background-color: #1877F2;
+}
+.fa-google-plus-g{
+    background-color:#FF0000 ;
+}
+.fa-twitter{
+    background-color:#1DA1F2 ;
+}
+.footer i{
+    color:white;
+    padding:5px;
+    font-size: 20px;
+}
+.footer li{
+    transition: .3s;
+}
+.footer li:hover{
+    transform: scale(1.1,1.1);
+    color:#ddd;
+}
+.footer .container h3,
+.footer .container p,
+.footer .container ul li
+{
+    color:var(--gold-color)
+}
+*/
+
+/*end footer*/
+        </style>
+        
+        <script src="/js/html5shiv.min.js"></script>
+        <script src="/js/respond.min.js"></script>
+        
+        
+    </head>
+
+    <body>
+        <div class="header-sec">
+            <div class="row">
+                <div class="col">
+                    <a href="tel:(646) 338-6643">(646) 338-6643</a>
+                </div>
+                <div class="col">
+                    Call Us Today!
+                </div>
+            </div>
+        </div>
+        <div class="layout-sec">
+           <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold fs-1" href="#">PYCHIC READING</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link p-lg-3 p-2 active" aria-current="page" href="#">Home</a>
+                 </li>
+                 
+                
+                 <li class="nav-item">
+                <a class="nav-link p-lg-3 p-2" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link p-lg-3 p-2 " href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 p-2 " href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 " href="#">Bloge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3 p-2 " href="#">Reviews</a>
+                            </li>
+                </ul>
+                
+               
+              </div>
+            </div>
+          </nav>
+
+          <!--start landing-->
+          <div class="landing">
+            <div class="container">
+                <div class="landing-info">
+                    <h1>PYCHIC READING</h1>
+                    
+                    <a class="btn  main-btn mt-5 text-uppercase" href="#">CONTACT US</a>
+                </div>
+            </div>
+          </div>
+          </div>
+          <!---
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.postimg.cc/tJYGyCbJ/IMAGE-1657959505.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.postimg.cc/sg1Q85bC/download.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.postimg.cc/9FZN9qLV/01-01-1645703898876-1645703907051.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        -->
+          <!--end landing-->
+
+          <!--start about me-->
+          <div class="about-me mt-5 text-center">
+            <div class="overlay-section"></div>
+            <div class="container">
+                <div class="aboutme-info">
+                <h1 class="aboutme-title">About Me</h1>
+                <p class="aboutme-p">Welcome to Mystical Psychic Garden, a safe space of answers and clarity sequestered in the busy city of New York, NY.<br><br>When the hustle and bustle become too much to bear, you will benefit from a visit with our powerful psychic.<br><br>From spiritual readings to aura cleansing, the guidance and solutions you seek are right here.<br><br> Welcome to the Mystical Psychic Garden. We hope you enjoy your stay.</p>
+            </div>
+            </div>
+          </div>
+
+          <!--end about me section-->
+
+          <!--start stuff-->
+          <div class="stuff">
+            <div class="overlay"></div>
+            <div class="container">
+               <div class="row mt-5 mb-5">
+                        <div class="col-lg-4">
+                            
+                            <h1>Our Services</h>
+        
+                        </div>
+
+                        <div class="col-lg-8 stuff-info">
+                            <div class="d-lg-flex">
+                            <img src="/images/psychic31.jpg">
+                            <div class="">
+                            <h2>Tarot Card Reading</h2>
+                            <p>Seek solutions in the tarot cards! A tarot card reading by Mystical Psychic Garden in New York, NY, can bring to light your past, present, and future. Find guidance in our metaphysical supplies and services today.</p><br>
+                          </div>
+                    </div>
+                          <div class="d-lg-flex">
+                            <img src="/images/psychic-singapore-reading-900x643.webp">
+                            <div>
+                            <h2>Tarot Card Reading</h2>
+                            <p>Seek solutions in the tarot cards! A tarot card reading by Mystical Psychic Garden in New York, NY, can bring to light your past, present, and future. Find guidance in our metaphysical supplies and services today.</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="d-lg-flex">
+                            <img src="/images/psychic31.jpg">
+                            <div class="">
+                            <h2>Tarot Card Reading</h2>
+                            <p>Seek solutions in the tarot cards! A tarot card reading by Mystical Psychic Garden in New York, NY, can bring to light your past, present, and future. Find guidance in our metaphysical supplies and services today.</p><br>
+                          </div>
+                    </div>
+                        </div>
+                    </div>
+            </div>
+          </div>
+          <!--end stuff-->
+
+         
+          
+
+          <!--strat project-->
+          
+          <div class="reviews text-center pt-5 pb-5 ">
+             <div class="container">
+                <h2>Reviews</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 review">
+                        <p>My name is Valary West. I'm from Canada, My husband and I have been married for about 7 yrs now. We were happily married with two kids, a boy and a girl. 3 months ago, I started to notice some strange behavior from him and a few weeks later I found out that my husband is seeing someone else. He started coming home late from work, he hardly cared about me or the kids an...  more</p>
+                    </div>
+
+                    <div class="col-lg-3 review">
+                        <p>I just want to say thank you so much Sarena. She not only was patient but accurate. Thank you for your time and guidance.</p>
+                    </div>
+
+                    <div class="col-lg-3 review">
+                        <p>My name is Valary West. I'm from Canada, My husband and I have been married for about 7 yrs now. We were happily married with two kids, a boy and a girl. 3 months ago, I started to notice some strange behavior from him and a few weeks later I found out that my husband is seeing someone else. He started coming home late from work, he hardly cared about me or the kids an...  more</p>
+                    </div>
+                </div>
+             
+              </div>
+          </div>
+          <!--end project-->
+    <!--start gallary section-->
+        <!-- <div class="gallary text-center">
+            <div class="container">
+                <h2 class="mb-5">GALLARY</h2>
+                <div class="row">
+                    <div class="col">
+                        <img src="/images/Psychic3.png" alt="gallary-img">
+                    </div>
+
+                    <div class="col">
+                        <img src="/images/Psychic1.png" alt="gallary-img">
+                    </div>
+
+                    <div class="col">
+                        <img src="/images/Psychic2.png" alt="gallary-img">
+                    </div>
+
+                    <div class="col">
+                        <img src="/images/psychic31.jpg" alt="gallary-img">
+                    </div>
+                </div>
+            </div>
+         </div>
+        -->
+   
+    <!--start maps-->
+    <div class="map-sec">
+        <div class="container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14053.648717479686!2d-81.3551951!3d28.2858357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd853d6bf44963%3A0xd820928f8840788b!2sThe%20Ray%20Of%20Light%20Psychic%20Boutique!5e0!3m2!1sen!2snp!4v1678878264903!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    
+    <!--end maps-->
+          
+
+          
+
+          <!--start footer-->
+          <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="/images/boldone-02-300x292.png">
+                       
+                    </div>
+
+                    <div class="col-lg-8 ">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart pe-3"></i>
+                            <p>Highly Accurate Clairvoyant Tarot Advisor - Results Each time, With Timelines.</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart pe-3"></i>
+                            <p>Here to help not hinder.</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart pe-3"></i>
+                            <p>You need honesty, Try my services today, Get the truth now.
+                                Gain more clarity about your situations, Love / Marriage & Relationship advice Soulmate &.</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart pe-3"></i>
+                            <p>Twinflame readings Guidance in all Matters!</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hand-holding-heart pe-3"></i>
+                            <p>Career / Finances / Jobs / Family / Friends / Associates / Spirit messages and more.</p>
+                        </div>
+                        <div>
+                            <button class="btn-footer"> LET'S TALK</button>
+                        </div>
+                    </div>
+                    <div class="row footer-info">
+                        <div class="col ">
+                            
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:askpsychicvivian@gmail.com">askpsychicvivian@gmail.com</a>
+                            
+                        </div>
+                        <div class="col">
+                            <a href="tel:+1 (708) 563-9900">+1 (708) 563-9900</a>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-location-pin"></i>
+                                <p>5015 N Cumberland Ave, Chicago, IL 60706</p> 
+                            </div>
+                            <div class="d-flex ms-5">
+                                <i class="fa-solid fa-location-pin"></i>
+                                <p>8046 S 83rd Ave, Justice, IL 60458</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-location-pin"></i>
+                                <p>5015 N Cumberland Ave, Chicago, IL 60706</p> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer">
+                        <ul>
+                            <li>HOME</li>
+                            <li>ABOUT</li>
+                            <li>CONTACT US</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 Psychic Vivian | Powered by Psychic Vivian</p>
+            </div>
+          </div>
+
+
+         <!-- <div class="footer  pb-5 pt-5">
+            <div class="container">
+                <div class="row lh-lg">
+                    <div class="col-lg-4 col-md-12">
+                        <h3 class="">PYCHIC READING</h3>
+                        <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                        <p>Created By Graphberry
+                            © 2022 -<span>Bondi Inc</span></p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <h3 class="">Links</h3>
+                        <ul class="list-unstyled">
+                            <li>Home</li>
+                            <li>Our Services</li>
+                            <li>Portfolio</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <h3 class="">About Us</h3>
+                        <ul class="list-unstyled">
+                            <li>Sign In</li>
+                            <li>Register</li>
+                            <li>About Us</li>
+                            
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-3">
+                        <h3>Contact Us</h3>
+                        <p>Get in touch with us via mail phone.We are waiting for your call or message</p>
+                        <a class="btn  main-btn mt-5 text-uppercase" href="#">pychic reading</a>
+
+                        <ul class="list-unstyled d-flex mt-5">
+                            <li class="me-3"><i class="fa-brands fa-facebook rounded-pill p-2"></i></li>
+                            <li class="me-3"><i class="fa-brands fa-google-plus-g rounded-pill p-2"></i></li>
+                            <li class="me-3"><i class="fa-brands fa-twitter rounded-pill p-2"></i></li>
+                            <li class="me-3"><i class="fa-brands fa-linkedin rounded-pill p-2"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        -->
+        
+          <!--end footer-->
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script>
+       <script src="/js/script.js"></script>
+      
+       
+    </body>
+</html>
